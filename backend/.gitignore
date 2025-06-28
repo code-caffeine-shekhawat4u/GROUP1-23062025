@@ -1,0 +1,110 @@
+# Backend specific gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Flask/Django
+instance/
+.webassets-cache
+*.db
+*.sqlite3
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+database.db
+app.db
+
+# Logs
+*.log
+logs/
+flask.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.nox/
+
+# Machine Learning Models
+models/
+*.pkl
+*.h5
+*.pth
+*.onnx
+*.joblib
+
+# Uploaded files
+uploads/
+static/uploads/
+media/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+
+# API keys and secrets
+secrets.json
+config/secrets.py
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# PyCharm
+.idea/

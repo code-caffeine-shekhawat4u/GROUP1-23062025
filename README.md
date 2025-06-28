@@ -115,17 +115,26 @@ This project develops a smart system that automatically identifies college areas
 ### 🔧 System Architecture
 
 ```
-📸 Image Collection → 🔄 Data Processing → 🤖 ML Training → 🌐 Web App → 📊 User Interface
+📸 Data Collection → 🤖 ML Training → 🔗 Backend API → 🎨 Frontend UI → � User Experience
+```
+
+**Project Structure:**
+```
+📁 GROUP1-23062025/
+├── � train/          # ML model training & dataset management
+├── 🔗 backend/        # API services & model serving
+├── 🎨 frontend/       # User interface & web application
+└── 📚 README.md       # Project documentation
 ```
 
 **Core Components:**
 
-1. **📷 Image Collection Module** - Campus photography & dataset creation
-2. **⚡ Data Processing Pipeline** - Image preprocessing & augmentation
-3. **🧠 ML Training Pipeline** - Model training & validation
-4. **🌐 Web Application** - User interface for uploads & predictions
-5. **🔗 API Services** - Backend services for model inference
-6. **💾 Database** - Storage for images, predictions & user data
+1. **📊 Training Module** - Dataset preparation, model training & validation
+2. **📷 Image Collection** - Campus photography & dataset creation
+3. **🤖 ML Model Pipeline** - CNN training, optimization & export
+4. **🔗 Backend Services** - API endpoints & model serving infrastructure
+5. **🎨 Frontend Interface** - User-friendly web application
+6. **💾 Data Management** - Storage for images, models & predictions
 
 ---
 
@@ -222,8 +231,8 @@ This project develops a smart system that automatically identifies college areas
 git clone https://github.com/code-caffeine-shekhawat4u/GROUP1-23062025
 cd GROUP1-23062025
 
-# 2️⃣ Backend setup
-cd backend
+# 2️⃣ Training module setup
+cd train
 python -m venv venv
 
 # Activate virtual environment:
@@ -234,14 +243,26 @@ venv\Scripts\activate
 
 pip install -r requirements.txt
 
-# 3️⃣ Frontend setup
+# 3️⃣ Backend setup
+cd ../backend
+python -m venv venv
+# Activate environment (same as above)
+pip install -r requirements.txt
+
+# 4️⃣ Frontend setup
 cd ../frontend
 npm install
 npm start
 
-# 4️⃣ Start backend server
-cd ../backend
-python app.py
+# 5️⃣ Start services
+# Terminal 1 - Train model (if needed):
+cd train && python train_model.py
+
+# Terminal 2 - Backend server:
+cd backend && python app.py
+
+# Terminal 3 - Frontend (already started):
+# Frontend runs on http://localhost:3000
 ```
 
 ---

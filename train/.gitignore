@@ -1,0 +1,116 @@
+# Training module specific gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Environment variables
+.env
+.env.local
+
+# Datasets (often too large for git)
+data/raw/
+data/processed/
+data/train/
+data/validation/
+data/test/
+datasets/
+*.zip
+*.tar.gz
+*.rar
+
+# Model files and checkpoints
+models/
+checkpoints/
+*.pkl
+*.h5
+*.pth
+*.onnx
+*.tflite
+*.joblib
+*.pt
+
+# Training logs and outputs
+logs/
+tensorboard_logs/
+wandb/
+mlruns/
+runs/
+outputs/
+lightning_logs/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Training artifacts
+experiments/
+results/
+plots/
+figures/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+
+# Cache directories
+.cache/
+__pycache__/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+
+# Large output files
+*.out
+*.err
+
+# CUDA cache
+.nv/
+
+# Weights & Biases
+wandb/
+
+# MLflow
+mlruns/
+
+# Configuration overrides
+config/local_config.yaml
+config/secret_config.yaml
+
+# Downloaded pretrained models
+pretrained/
